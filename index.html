@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas paint</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="canvas-container">
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <label for="color">Color:</label>
+            <select id="colorSelect">
+                <option value="#000000">Black</option>
+                <option value="#ff0000">Red</option>
+                <option value="#00ff00">Green</option>
+                <option value="#0000ff">Blue</option>
+                <option value="#ffff00">Yellow</option>
+            </select>
+            <input type="color" id="color" value="#000000">
+            <button id="eraserButton">Eraser</button>
+            <button id="brushButton">Brush</button>
+            <button id="sprayButton">Spray</button>
+            <button id="pencilButton">Pencil</button> <!-- Добавляем кнопку "Pencil" -->
+            <label for="lineWidth">Line Width:</label>
+            <input type="number" id="lineWidth" min="1" max="50" value="5">
+            <label for="canvasWidth">Canvas Width:</label>
+            <input type="number" id="canvasWidth" min="100" max="2000" value="800">
+            <label for="canvasHeight">Canvas Height:</label>
+            <input type="number" id="canvasHeight" min="100" max="2000" value="600">
+            <button id="resizeButton">Resize Canvas</button>
+            <button id="clearButton">Clear</button>
+            <button id="saveButton">Save</button>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

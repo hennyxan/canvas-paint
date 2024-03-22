@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#canvas-container {
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid #000;
+    cursor: crosshair;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.controls button {
+    margin-left: 10px;
+    padding: 15px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.controls label {
+    margin-right: 5px;
+}
+
+.controls input[type="color"] {
+    padding: 2px;
+    margin-right: 5px;
+}
